@@ -2,104 +2,106 @@
 <html lang="pt-br">
 <head>
     <title>Atividade Prática 06b: (validar o HTML5)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .tr1{
+        .tr1 {
             background-color: #000000;
             color: white;
         }
+
         .tr2 tr:nth-child(even) {
             background-color: #dbcdc3;
         }
-        .tr3{
+
+        .tr3 {
             background-color: aqua;
         }
-        h1{
+
+        h1 {
             text-align: center;
         }
-        table{
+
+        table {
             margin-left: auto;
             margin-right: auto;
             width: 50%;
         }
-        table,td,th{
+
+        table,
+        td,
+        th {
             border: 2px solid black;
             border-collapse: collapse;
             padding-top: 5px;
             padding-bottom: 5px;
         }
-
     </style>
-
 </head>
 <body>
-    <!--TABELA 1-->
-<h1>TITULO PRINCIPAL</h1><br>
-<table class="tr2">
-    <caption>Tabela 01: Monitoria Web</caption>
-    <tr class="tr1">
-        <th>DIA/HORA</th>
-        <th>Ter</th>
-        <th>Qua</th>
-        <th>Qui</th>
-    </tr>
-    <tr >
-        <td>11:00</td>
-        <td colspan="3">X</td>
-    </tr>
-    <tr>
-        <td>13:00</td>
-        <td></td>
-        <td>X</td>
-        <td>X</td>
-    </tr>
-    <tr>
-    <td rowspan="2">15:00 às 18:00</td>
-    <td></td>
-    <td colspan="2">X</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td colspan="2">X</td>
-        
-    </tr>
-</table><br>
-<table>
-    <!--TABELA 2-->
-    <caption>Tabela 02: Horário das Aulas</caption>
-    <tr class="tr3">
-        <th>/</th>
-        <th>Seg</th>
-        <th>Ter</th>
-        <th>Qua</th>
-        <th>Qui</th>
-        <th>Sex</th>
-    </tr>
-    <tr>
-       <td>10:00 às 12:00</td> 
-       <td>FPW</td>
-       <td colspan="2">PROG</td>
-       <td>ED1</td>
-       <td rowspan="2">MAT</td>   
-    </tr>
-    <tr>
-        <td>13:00 às 15:00</td> 
-        <td>-</td>
-        <td>FPW</td>
-        <td>-</td>
-        <td>ING</td>
-        
-        
-    </tr>
-    <tr>
-        <td>15:00 às 17:00</td> 
-        <td>-</td>
-        <td>FPW</td>
-        <td colspan="2">COMP</td>
-        <td>ING</td>        
-    </tr>
-</table><br>
+    <h1>TITULO PRINCIPAL</h1><br>
+    <table class="tr2" onmouseover="alert('Mouse sobre a tabela!')">
+        <caption>Tabela 01: Monitoria Web</caption>
+        <tr class="tr1">
+            <th>DIA/HORA</th>
+            <th>Ter</th>
+            <th>Qua</th>
+            <th>Qui</th>
+        </tr>
+        <tr>
+            <td>11:00</td>
+            <td colspan="3">X</td>
+        </tr>
+        <tr>
+            <td>13:00</td>
+            <td></td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+        <tr>
+            <td rowspan="2">15:00 às 18:00</td>
+            <td></td>
+            <td colspan="2">X</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2">X</td>
+        </tr>
+    </table><br>
+    <table>
+        <caption>Tabela 02: Horário das Aulas</caption>
+        <tr class="tr3">
+            <th>/</th>
+            <th>Seg</th>
+            <th>Ter</th>
+            <th>Qua</th>
+            <th>Qui</th>
+            <th>Sex</th>
+        </tr>
+        <tr>
+            <td>10:00 às 12:00</td>
+            <td>FPW</td>
+            <td colspan="2">PROG</td>
+            <td>ED1</td>
+            <td rowspan="2">MAT</td>
+        </tr>
+        <tr>
+            <td>13:00 às 15:00</td>
+            <td>-</td>
+            <td>FPW</td>
+            <td>-</td>
+            <td>ING</td>
+        </tr>
+        <tr>
+            <td>15:00 às 17:00</td>
+            <td>-</td>
+            <td>FPW</td>
+            <td colspan="2">COMP</td>
+            <td>ING</td>
+        </tr>
+    </table><br>
 
-        <!--TABELA 3-->
     <table>
         <caption>Tabela 03: Atendimento ao Aluno</caption>
         <tr>
@@ -117,30 +119,36 @@
             <td>X</td>
             <td>-</td>
             <td>X</td>
-          </tr>
-          <tr>
+        </tr>
+        <tr>
             <th>13:00 às 15:00</th>
             <td>-</td>
             <td>X</td>
             <td>-</td>
             <td colspan="2" rowspan="3">-</td>
-          </tr>
-          <tr>
+        </tr>
+        <tr>
             <th>15:00 às 17:00</th>
             <td>X</td>
             <td>-</td>
             <td>X</td>
-            
-          </tr> 
-          <tr>
+        </tr>
+        <tr>
             <th>18:00 às 20:00</th>
             <td>-</td>
             <td>X</td>
             <td>-</td>
-            
-          </tr>
-    </table>   
-</table>
+        </tr>
+    </table>
 
+    <button class="btn btn-primary mt-3" onclick="changeCaption()">Alterar Legenda da Tabela</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function changeCaption() {
+            var caption = document.querySelector('caption');
+            caption.textContent = "Nova Legenda da Tabela";
+        }
+    </script>
 </body>
 </html>
